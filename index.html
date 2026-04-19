@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Dennis Johansson portfolio website showcasing projects, experience, and contact details."
+  />
+  <title>Dennis Johansson | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <nav class="topbar">
+        <div class="brand" aria-label="Dennis Johansson logo">DJ</div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a class="button button-secondary" href="CV.pdf" download>Download CV</a>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light and dark mode" aria-pressed="false">
+            <span class="theme-toggle-thumb" aria-hidden="true"></span>
+            <span class="theme-toggle-option theme-toggle-option-dark" aria-hidden="true">
+              <i class="fa-solid fa-moon theme-icon theme-icon-dark"></i>
+            </span>
+            <span class="theme-toggle-option theme-toggle-option-light" aria-hidden="true">
+              <i class="fa-solid fa-sun theme-icon theme-icon-light"></i>
+            </span>
+          </button>
+        </div>
+      </nav>
+
+      <section class="hero-content" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Dennis Johansson</p>
+          <h1>A portfolio of selected projects in AI, machine learning and software engineering</h1>
+          <p class="lead">
+            4th-year M.Sc. student in Computer Science and Software Engineering at Linköping University,
+            specialising in AI and machine learning with a strong interest in smart automation,
+            optimisation and problem solving.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View Projects</a>
+          <a class="button button-secondary" href="#contact">Contact information</a>
+          </div>
+          <ul class="quick-stats" aria-label="Highlights">
+            <li>
+              <span class="stat-value">Machine Learning</span>
+              <span class="stat-label">Machine learning and model development</span>
+            </li>
+            <li>
+              <span class="stat-value">Natural Language Processing</span>
+              <span class="stat-label">Language-focused AI projects, reasoning experiments, and model adaptation workflows</span>
+            </li>
+            <li>
+              <span class="stat-value">Full-Stack Development</span>
+              <span class="stat-label">Building complete applications across frontend, backend, and integration</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-card" aria-label="Current academic focus">
+          <div class="hero-card-glow"></div>
+          <p class="card-label">Current focus in school</p>
+          <h2>AI, machine learning, software engineering and building strong technical foundations</h2>
+          <p>
+            Right now, I am focused on developing deeper skills in AI and machine learning while
+            continuing to strengthen my programming, problem-solving and software engineering abilities
+            through university projects and technical coursework.
+          </p>
+          <div class="hero-links-box" aria-label="Profile links">
+            <p class="hero-links-label">Links</p>
+            <div class="hero-card-links hero-card-links-icons">
+              <a href="https://github.com/DennisJohansson423" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/dennis-johansson-" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              </a>
+              <a href="mailto:dennisjohansson22@icloud.com" aria-label="Send email">
+                <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </header>
+
+    <main>
+      <section class="section" id="about">
+        <div class="section-heading">
+          <p class="section-kicker">About</p>
+          <h2>More about me</h2>
+        </div>
+        <div class="about-grid">
+          <article class="glass-card about-card">
+            <h3>Background</h3>
+            <p>
+              I am a 4th-year M.Sc. student in Computer Science and Software Engineering at Linköping University,
+              specialising in AI and machine learning.
+            </p>
+          </article>
+          <article class="glass-card about-card">
+            <h3>What I work with</h3>
+            <p>
+              AI, machine learning, programming, optimisation, fullstack and software development,
+              with a focus on turning complex challenges into efficient solutions.
+            </p>
+          </article>
+          <article class="glass-card about-card">
+            <h3>How I work</h3>
+            <p>
+              I enjoy collaborating in teams, taking ownership when needed and creating structured,
+              practical results through clear thinking and technical execution.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="section-kicker">Projects</p>
+          <h2>Selected work</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured-project">
+            <div class="project-topline">
+              <span class="project-badge">Featured</span>
+              <span class="project-type">Natural Language Processing</span>
+            </div>
+            <h3>LLM Reasoning Experiments</h3>
+            <p>
+              A project focused on reasoning-oriented large language model experiments,
+              including evaluation, supervised fine-tuning and reinforcement learning workflows.
+            </p>
+            <p class="project-stack"><strong>Tech:</strong> Python, PyTorch, Reinforcement Learning, Supervised Fine-Tuning</p>
+            <div class="project-links">
+              <a href="https://github.com/Isenborg/reasoning-llm" target="_blank" rel="noreferrer">View on GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="project-badge">Course Project</span>
+              <span class="project-type">Artificial Intelligence</span>
+            </div>
+            <h3>Artificial Intelligence Project Course</h3>
+            <p>
+              A course project focused on AI method selection, experimental evaluation,
+              performance metrics and integrating artificial intelligence into a larger full system.
+            </p>
+            <p class="project-stack"><strong>Tech:</strong> Python, AI methods, evaluation, system integration</p>
+            <div class="project-links">
+              <a href="https://github.com/DennisJohansson423/TDDD92" target="_blank" rel="noreferrer">View on GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="project-badge">Portfolio</span>
+              <span class="project-type">Projects and Coursework</span>
+            </div>
+            <h3>GitHub Portfolio and Course Projects</h3>
+            <p>
+              A broader collection of projects and coursework covering software engineering,
+              machine learning, artificial intelligence, full-stack development, technical writing,
+              and problem-solving across university work.
+            </p>
+            <p class="project-stack"><strong>Tech:</strong> Java, C++, R, HTML, CSS, JavaScript, SQL and more</p>
+            <div class="project-links">
+              <a href="https://github.com/DennisJohansson423" target="_blank" rel="noreferrer">View on GitHub</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-cta" id="contact">
+        <div class="cta-card">
+          <div>
+            <p class="section-kicker">Contact</p>
+            <h2>Want to get in touch?</h2>
+            <p>
+              For internships, collaborations or opportunities in AI, machine learning and software engineering,
+              feel free to reach out!
+            </p>
+          </div>
+          <div class="cta-actions">
+            <a class="button button-primary" href="mailto:dennisjohansson22@icloud.com">Send Email</a>
+            <a class="button button-secondary" href="CV.pdf" download>Download CV</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const root = document.documentElement;
+    const toggle = document.getElementById('theme-toggle');
+    const savedTheme = localStorage.getItem('theme');
+
+    const syncThemeToggle = () => {
+      const isLight = root.classList.contains('light-theme');
+      toggle.setAttribute('aria-pressed', String(isLight));
+      toggle.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
+    };
+
+    if (savedTheme === 'light') {
+      root.classList.add('light-theme');
+    }
+
+    syncThemeToggle();
+
+    toggle.addEventListener('click', () => {
+      root.classList.toggle('light-theme');
+      const currentTheme = root.classList.contains('light-theme') ? 'light' : 'dark';
+      localStorage.setItem('theme', currentTheme);
+      syncThemeToggle();
+    });
+  </script>
+</body>
+</html>
