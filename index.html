@@ -15,6 +15,7 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -42,40 +43,42 @@
       <section class="hero-content" id="top">
         <div class="hero-copy">
           <p class="eyebrow">Dennis Johansson</p>
-          <h1>A portfolio of selected projects in AI, machine learning and software engineering</h1>
+          <h1>A portfolio of AI and machine learning projects.</h1>
           <p class="lead">
             4th-year M.Sc. student in Computer Science and Software Engineering at Linköping University,
-            specialising in AI and machine learning with a strong interest in smart automation,
-            optimisation and problem solving.
+            specialising in AI and machine learning. I enjoy turning complex problems into clear,
+            efficient solutions — combining solid software engineering foundations with hands-on work
+            across applied ML, natural language processing and full-stack development.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#projects">View Projects</a>
-          <a class="button button-secondary" href="#contact">Contact information</a>
+          <a class="button button-secondary" href="#contact">Get in touch</a>
           </div>
           <ul class="quick-stats" aria-label="Highlights">
             <li>
               <span class="stat-value">Machine Learning</span>
-              <span class="stat-label">Machine learning and model development</span>
+              <span class="stat-label">Model development and evaluation</span>
             </li>
             <li>
               <span class="stat-value">Natural Language Processing</span>
-              <span class="stat-label">Language-focused AI projects, reasoning experiments, and model adaptation workflows</span>
+              <span class="stat-label">Reasoning experiments and model adaptation</span>
             </li>
             <li>
               <span class="stat-value">Full-Stack Development</span>
-              <span class="stat-label">Building complete applications across frontend, backend, and integration</span>
+              <span class="stat-label">Frontend, backend, and integration</span>
             </li>
           </ul>
         </div>
 
         <aside class="hero-card" aria-label="Current academic focus">
           <div class="hero-card-glow"></div>
-          <p class="card-label">Current focus in school</p>
-          <h2>AI, machine learning, software engineering and building strong technical foundations</h2>
+          <p class="card-label">Academic focus</p>
+          <h2>Deepening my AI expertise through M.Sc. studies.</h2>
           <p>
-            Right now, I am focused on developing deeper skills in AI and machine learning while
-            continuing to strengthen my programming, problem-solving and software engineering abilities
-            through university projects and technical coursework.
+            My coursework spans machine learning, natural language processing, software engineering
+            and AI methods. Through projects ranging from reasoning-oriented LLMs to sports analytics
+            and full-stack development, I am building the practical skills to take ideas from
+            concept to working systems.
           </p>
           <div class="hero-links-box" aria-label="Profile links">
             <p class="hero-links-label">Links</p>
@@ -97,26 +100,35 @@
 
     <main>
       <section class="section" id="about">
-        <div class="section-heading">
+        <div class="section-heading fade-in">
           <p class="section-kicker">About</p>
           <h2>More about me</h2>
         </div>
         <div class="about-grid">
-          <article class="glass-card about-card">
+          <article class="glass-card about-card fade-in">
+            <div class="about-card-icon" aria-hidden="true">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
             <h3>Background</h3>
             <p>
               I am a 4th-year M.Sc. student in Computer Science and Software Engineering at Linköping University,
               specialising in AI and machine learning.
             </p>
           </article>
-          <article class="glass-card about-card">
+          <article class="glass-card about-card fade-in">
+            <div class="about-card-icon" aria-hidden="true">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
             <h3>What I work with</h3>
             <p>
               AI, machine learning, programming, optimisation, fullstack and software development,
               with a focus on turning complex challenges into efficient solutions.
             </p>
           </article>
-          <article class="glass-card about-card">
+          <article class="glass-card about-card fade-in">
+            <div class="about-card-icon" aria-hidden="true">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
             <h3>How I work</h3>
             <p>
               I enjoy collaborating in teams, taking ownership when needed and creating structured,
@@ -127,13 +139,13 @@
       </section>
 
       <section class="section" id="projects">
-        <div class="section-heading">
+        <div class="section-heading fade-in">
           <p class="section-kicker">Projects</p>
           <h2>Selected work</h2>
         </div>
 
         <div class="project-grid">
-          <article class="project-card featured-project">
+          <article class="project-card featured-project fade-in">
             <div class="project-topline">
               <span class="project-badge">Featured</span>
               <span class="project-type">Natural Language Processing</span>
@@ -143,13 +155,18 @@
               A project focused on reasoning-oriented large language model experiments,
               including evaluation, supervised fine-tuning and reinforcement learning workflows.
             </p>
-            <p class="project-stack"><strong>Tech:</strong> Python, PyTorch, Reinforcement Learning, Supervised Fine-Tuning</p>
+            <ul class="tech-stack" aria-label="Tech stack">
+              <li class="tech-chip"><i class="devicon-python-plain" aria-hidden="true"></i><span>Python</span></li>
+              <li class="tech-chip"><i class="devicon-pytorch-original" aria-hidden="true"></i><span>PyTorch</span></li>
+              <li class="tech-chip"><i class="fa-solid fa-bullseye" aria-hidden="true"></i><span>Reinforcement Learning</span></li>
+              <li class="tech-chip"><i class="fa-solid fa-sliders" aria-hidden="true"></i><span>Supervised Fine-Tuning</span></li>
+            </ul>
             <div class="project-links">
               <a href="https://github.com/DennisJohansson423/reasoning-llm" target="_blank" rel="noreferrer">View on GitHub</a>
             </div>
           </article>
 
-          <article class="project-card featured-project">
+          <article class="project-card featured-project fade-in">
             <div class="project-topline">
               <span class="project-badge">Featured</span>
               <span class="project-type">Sports Analytics</span>
@@ -160,13 +177,19 @@
               field players' market values from on-field performance statistics using multiple ML models,
               then benchmarks predictions against Transfermarkt values and actual transfer fees.
             </p>
-            <p class="project-stack"><strong>Tech:</strong> Python, XGBoost, Random Forest, Ridge Regression, pandas, scikit-learn, SHAP</p>
+            <ul class="tech-stack" aria-label="Tech stack">
+              <li class="tech-chip"><i class="devicon-python-plain" aria-hidden="true"></i><span>Python</span></li>
+              <li class="tech-chip"><i class="devicon-scikitlearn-plain" aria-hidden="true"></i><span>scikit-learn</span></li>
+              <li class="tech-chip"><i class="fa-solid fa-rocket" aria-hidden="true"></i><span>XGBoost</span></li>
+              <li class="tech-chip"><i class="fa-solid fa-tree" aria-hidden="true"></i><span>Random Forest</span></li>
+              <li class="tech-chip"><i class="fa-solid fa-chart-column" aria-hidden="true"></i><span>SHAP</span></li>
+            </ul>
             <div class="project-links">
               <a href="https://github.com/DennisJohansson423/football-market-value-prediction" target="_blank" rel="noreferrer">View on GitHub</a>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card fade-in">
             <div class="project-topline">
               <span class="project-badge">Course Project</span>
               <span class="project-type">Artificial Intelligence</span>
@@ -176,13 +199,18 @@
               A course project focused on AI method selection, experimental evaluation,
               performance metrics and integrating artificial intelligence into a larger full system.
             </p>
-            <p class="project-stack"><strong>Tech:</strong> Python, AI methods, evaluation, system integration</p>
+            <ul class="tech-stack" aria-label="Tech stack">
+              <li class="tech-chip"><i class="devicon-python-plain" aria-hidden="true"></i><span>Python</span></li>
+              <li class="tech-chip"><i class="fa-solid fa-brain" aria-hidden="true"></i><span>AI methods</span></li>
+              <li class="tech-chip"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i><span>Evaluation</span></li>
+              <li class="tech-chip"><i class="fa-solid fa-puzzle-piece" aria-hidden="true"></i><span>System integration</span></li>
+            </ul>
             <div class="project-links">
               <a href="https://github.com/DennisJohansson423/TDDD92" target="_blank" rel="noreferrer">View on GitHub</a>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card fade-in">
             <div class="project-topline">
               <span class="project-badge">Portfolio</span>
               <span class="project-type">Projects and Coursework</span>
@@ -193,7 +221,19 @@
               machine learning, artificial intelligence, full-stack development, technical writing,
               and problem-solving across university work.
             </p>
-            <p class="project-stack"><strong>Tech:</strong> Java, C++, R, HTML, CSS, JavaScript, SQL and more</p>
+            <ul class="tech-stack" aria-label="Tech stack">
+              <li class="tech-chip"><i class="devicon-python-plain" aria-hidden="true"></i><span>Python</span></li>
+              <li class="tech-chip"><i class="devicon-java-plain" aria-hidden="true"></i><span>Java</span></li>
+              <li class="tech-chip"><i class="devicon-c-plain" aria-hidden="true"></i><span>C</span></li>
+              <li class="tech-chip"><i class="devicon-cplusplus-plain" aria-hidden="true"></i><span>C++</span></li>
+              <li class="tech-chip"><i class="devicon-r-plain" aria-hidden="true"></i><span>R</span></li>
+              <li class="tech-chip"><i class="devicon-matlab-plain" aria-hidden="true"></i><span>MATLAB</span></li>
+              <li class="tech-chip"><i class="fa-solid fa-microchip" aria-hidden="true"></i><span>Assembly</span></li>
+              <li class="tech-chip"><i class="devicon-html5-plain" aria-hidden="true"></i><span>HTML</span></li>
+              <li class="tech-chip"><i class="devicon-css3-plain" aria-hidden="true"></i><span>CSS</span></li>
+              <li class="tech-chip"><i class="devicon-javascript-plain" aria-hidden="true"></i><span>JavaScript</span></li>
+              <li class="tech-chip"><i class="devicon-mysql-plain" aria-hidden="true"></i><span>SQL</span></li>
+            </ul>
             <div class="project-links">
               <a href="https://github.com/DennisJohansson423" target="_blank" rel="noreferrer">View on GitHub</a>
             </div>
@@ -202,7 +242,7 @@
       </section>
 
       <section class="section section-cta" id="contact">
-        <div class="cta-card">
+        <div class="cta-card fade-in">
           <div>
             <p class="section-kicker">Contact</p>
             <h2>Want to get in touch?</h2>
@@ -218,6 +258,21 @@
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Dennis Johansson</p>
+      <div class="footer-links" aria-label="Profile links">
+        <a href="https://github.com/DennisJohansson423" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/dennis-johansson-" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+          <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+        </a>
+        <a href="mailto:dennisjohansson22@icloud.com" aria-label="Send email">
+          <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+        </a>
+      </div>
+    </footer>
   </div>
 
   <script>
@@ -226,23 +281,39 @@
     const savedTheme = localStorage.getItem('theme');
 
     const syncThemeToggle = () => {
-      const isLight = root.classList.contains('light-theme');
+      const isLight = !root.classList.contains('dark-theme');
       toggle.setAttribute('aria-pressed', String(isLight));
       toggle.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
     };
 
-    if (savedTheme === 'light') {
-      root.classList.add('light-theme');
+    if (savedTheme === 'dark') {
+      root.classList.add('dark-theme');
     }
 
     syncThemeToggle();
 
     toggle.addEventListener('click', () => {
-      root.classList.toggle('light-theme');
-      const currentTheme = root.classList.contains('light-theme') ? 'light' : 'dark';
+      root.classList.toggle('dark-theme');
+      const currentTheme = root.classList.contains('dark-theme') ? 'dark' : 'light';
       localStorage.setItem('theme', currentTheme);
       syncThemeToggle();
     });
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const fadeTargets = document.querySelectorAll('.fade-in');
+    if (prefersReducedMotion || !('IntersectionObserver' in window)) {
+      fadeTargets.forEach((el) => el.classList.add('visible'));
+    } else {
+      const fadeObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            fadeObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      fadeTargets.forEach((el) => fadeObserver.observe(el));
+    }
   </script>
 </body>
 </html>
