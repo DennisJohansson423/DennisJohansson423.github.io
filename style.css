@@ -636,7 +636,7 @@ h1 {
   height: 100%;
 }
 
-.theme-toggle[aria-pressed="false"] .theme-toggle-thumb {
+.theme-toggle[aria-pressed="true"] .theme-toggle-thumb {
   transform: translateX(100%);
 }
 
@@ -647,8 +647,8 @@ h1 {
   transition: color 0.2s ease;
 }
 
-.theme-toggle[aria-pressed="false"] .theme-icon-light,
-.theme-toggle[aria-pressed="true"] .theme-icon-dark {
+.theme-toggle[aria-pressed="false"] .theme-icon-dark,
+.theme-toggle[aria-pressed="true"] .theme-icon-light {
   color: var(--heading);
 }
 
