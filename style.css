@@ -403,32 +403,22 @@ h1 {
   margin: 0;
 }
 
-/* ========== Experience Timeline ========== */
+/* ========== Experience ========== */
 
-.timeline {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
+.experience-grid {
+  display: grid;
+  gap: 16px;
 }
 
-.timeline-item {
-  position: relative;
-}
-
-.timeline-item:not(:last-child) {
-  margin-bottom: 16px;
-}
-
-.timeline-card {
-  padding: 24px 28px;
+.experience-card {
+  padding: 28px;
   border-radius: 14px;
   background: var(--surface);
   border: 1px solid var(--surface-border);
   transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.timeline-card:hover {
+.experience-card:hover {
   border-color: var(--surface-border-strong);
   transform: translateY(-2px);
   box-shadow: var(--shadow);
@@ -448,7 +438,7 @@ h1 {
   font-weight: 500;
 }
 
-.timeline-card h3 {
+.experience-card h3 {
   font-size: 1.25rem;
   font-weight: 700;
   margin: 0 0 4px;
@@ -469,7 +459,7 @@ h1 {
   margin: 0 0 16px;
 }
 
-.timeline-card .tech-stack {
+.experience-card .tech-stack {
   margin: 0;
 }
 
@@ -846,11 +836,8 @@ h1 {
   .project-card,
   .about-card,
   .hero-card,
-  .cta-card {
+  .cta-card,
+  .experience-card {
     padding: 22px;
-  }
-
-  .timeline-card {
-    padding: 20px;
   }
 }
